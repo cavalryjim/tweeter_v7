@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'users',
     'tweets',
     'api',
+    'payments',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
