@@ -1,0 +1,16 @@
+<!-- payments/templates/payment.html -->
+{% extends 'base.html' %}
+{% block title %}Tweeter | Payment{% endblock %}
+
+{% block content %}
+  <h2>Checkout</h2>
+  <form action="{% url 'charge' %}" method="post">
+    {% csrf_token %}
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_********************"
+            data-description="A Django Charge"
+            data-amount="500"
+            data-locale="auto">
+    </script>
+  </form>
+{% endblock content %}

@@ -17,6 +17,7 @@ django-bootstrap-datepicker-plus = "*"
 djangorestframework = "*"
 django-rest-auth = "*"
 django-allauth = "*"
+stripe = "*"
 
 [requires]
 python_version = "3.7"
